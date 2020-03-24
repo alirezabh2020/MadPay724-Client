@@ -1,6 +1,6 @@
 import { RouterModule } from "@angular/router";
 import { PanelModule } from "./panel/panel.module";
-import { LoginModule } from "./login/login.module";
+import { AuthModule } from "./auth/auth.module";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { AppRoutingModule } from "./app-routing.module";
@@ -13,7 +13,7 @@ import { adminRoute } from "../app/routes/routes.routing";
     BrowserModule,
     AppRoutingModule,
     RouterModule.forChild(adminRoute),
-    LoginModule,
+    AuthModule,
     PanelModule
   ],
   providers: [],
